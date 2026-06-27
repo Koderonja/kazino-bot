@@ -1,0 +1,2 @@
+echo discord.py > requirements.txt
+echo python-dotenv >> requirements.txt
