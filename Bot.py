@@ -482,8 +482,7 @@ async def zameni(interaction: discord.Interaction, karte: str):
 
     await interaction.response.send_message(rezultat)
 
-from dotenv import load_dotenv
 import os
 
-load_dotenv()
-bot.run(os.getenv("TOKEN"))
+TOKEN = os.environ.get("TOKEN")
+bot.run(TOKEN)
